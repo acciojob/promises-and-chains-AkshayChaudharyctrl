@@ -24,7 +24,6 @@ var promise = new Promise((resolve, reject) => {
 
 
 function callPromise() {
-   delayPromise
     .then((data) => {
       alert(`Welcome, ${data.name}. You can vote.`);
     })
