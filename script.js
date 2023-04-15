@@ -21,6 +21,13 @@ var promise = new Promise((resolve, reject) => {
     }
   }, 4000);
 });
+delayPromise
+    .then((data) => {
+      alert(`Welcome, ${data.name}. You can vote.`);
+    })
+    .catch((error) => {
+      alert(`Oh sorry ${error.name}. You aren't old enough.`);
+    });
 
 function callPromise() {
     return promise;
